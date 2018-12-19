@@ -1,0 +1,46 @@
+import requests
+
+headers = {
+      'Host': 'www.adidas.com',
+      'Connection': 'keep-alive',
+      'Upgrade-Insecure-Requests': '1',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36',
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+      'Accept-Encoding': 'gzip, deflate, sdch',
+      'Accept-Language': 'en-US,en;q=0.8'
+      }
+
+data = {
+        'layer':'Add To Bag overlay',
+        'pid':'BA8842_670',
+        'Quantity':'1',
+        'g-recaptcha-response':'03AHJ_Vuv5ATiElmQcAqwXgxPnjOFWB0NsM_EwhymdepIxKyeYWF7F6p3ysg89hkvEhcX_9gDuMP4wTOIj2DPRqrVlje47j2f58EVbB8OOxNtyL8rrsTnLC1oKCwQwjCmeUtAZCjw_tSCFLOQd_oaxJKLHD4W3bYs8q06msMSC5do0e7F6bIUAxwuh-PDcthNRCLkaSSN4p3H5MvivPCH1UkNkHO7mfI5tCt3J3vIDrZX6Lw9dIAbziIc68VI5v2IHjxxhYwQ_CLK555Z6DEVOx8bfxdrLniUcQ0tuqVg1hDPuIPC0sx0_Im07juCtrHJbHr_NNdw6BGtRyugRBnEmvBOEF3KSF1t_AmbWhAVz5-uJsZ-9p-ayejPXZc5JrJ4FeLaGVzuTEdPYiDYRNzhndgy7PnwWLBwQjcq9gNLMnNkp1O2gU8U8M1CGkkN-qJcIMsZ67BtFu6cBQnDuiENJkTL1y3DLdPiqywKdNQximMC2bWYJ7bQQyjKvteREmVo2sPHu6tgS8-pubCHZZVyofm2Nx7izK5DxKzD__gF2VGR20Rw2gd8EVOiS0xJJydf4i2T9ucpDkTZuHpnFO1OuJYK_t4KsWAAV4fT-DldbOEsQvLF4-fJYOG-Uv9g7_A4SCaz80T-4kqT1AqC2ymADAGfCBjRvrFIRToRbZuGGT4ZL8yg_E58oEIWo21uFcIG77Z7hl8VV4s4zLyPB-dk1_Q7rbfUJvNqSKHg3MNeqSsGeM0dDy2fYB5EasSY1VHTSgVsoN4mFzvOv6shIRMIFeNkB956d1UAmm0wSEo9VKGhADJ5HT8s4chchkShLMkwpRVUT7GfMyFBKiKR0inA2ZFK7ewSmHlqu6KQUeshnBMvuSDo_1lLmhhFEHG33LntvqibfzJiIxIoFgPuUZejGoRcMy8KYstq12yF4bJLSYyMDrj4X8aZPwrhN43Wh6eu_5c0wzmGU56UN9Y2OQX5ZBmfF1Vaaxlq7E9w6Xl2WShwuh8RfUXOdhtLIFLM65hOzqcFufMqveQ-C-N-QnICZ9eucShZFe7IhJPJrMUKTypUL3Evf5LwmH5wEZCaaCZTyhkPtusnZST9t6XuW-lzDIT4Z_6OvEYoDj5Eq5VZ61JFt8lNVzOFDr4oYiv7e8CWoK41BffuS0gILlQhchP-waORsThaxnXPhsSbEIi-Yb5aSBn2xTlP6MGHztsPi742uAr0Q-skbXiBvzJdRWnu5neL0z4wXYHr4XlbcCfMIkergdGj72alwm1oRXPkzQUITYuE67Ha6c_GTxTKjVrZF6jKfjH2X7anxPT70fJ1FKvJlRKFlZlnerYvTmB_PXvE4Fa8egQP1FZWnArpo1c4NF6NS4IX3GltzYHCmB0_Zh2hOWLSdHid-tozAXvXMEznRbPYpD2xVYWLHmQXyO0Dgf2sWbNbJjhyg8rqMC9DsVfn3XdopWPj7ZJNqyuWMwLHBKutPvqcIHcLv_yWF-4J2tjlpxYxnJljO_pmrX6Ao0bBc9xcLnhqzUCLXDRbYlQVV0kBNB1V-wrGjTTkIF2O2MZuM7zaz34O3rbQ2fQaD_R-8KlczSK-pYBClB5HxtY2xgH78foQpJUGgFXKaqNGMqgozMxC4AnuCW8b_LSUKEAfbAwWvn6f0z5XEJzsRnBCvaRNcKf1T8sYf5Brd1zYUITI0QWZU6U-hb8fwXPPyRR1DeuDYTkhhU65_FpZZPQHAiXpD-qmQs5yyLtrajbPhhRZcJi-NwVzad0wi0ZIzYYdf1jtrrZKJmfmfUK6ErtznlRSypuB6foMOCRzIsFxt3eOAh1fc8DUkwsbm5Mq8dIa7UKLb9WRpEJx8Et9UbD9l1WQp2M04g3egA5j-AwEF04l6f44aNnAlgzGthIeBXpgL6bpcxtTMmQ1sTJlAe5pRtZxdvv7T-v_R943w9TjGsBdu77Uwo95lZczpdTERtqsyob1n6gwSjg3klOsG_I16FmyNeEDS-tFXOHELPWP1Sh3rGtQLpH1Ee9qKsSdMONTTIbnexifVou0',
+        'masterPid':'BA8842',
+        'sessionSelectedStoreID':'null',
+        'ajax':'true'
+        }
+
+addHeaders = {
+        'Host': 'www.adidas.com',
+        'Connection': 'keep-alive',
+        'Content-Length': '1080',
+        'Accept': '*/*',
+        'Origin': 'http://www.adidas.com',
+        'X-Requested-With': 'XMLHttpRequest',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36',
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'Accept-Encoding': 'gzip, deflate',
+        'Accept-Language': 'en-US,en;q=0.8'
+        }
+
+
+sesh = requests.Session()
+
+getPage = sesh.get('http://www.adidas.com/us/', headers = headers)
+
+add = sesh.post('http://www.adidas.com/on/demandware.store/Sites-adidas-US-Site/en_US/Cart-MiniAddProduct', headers = addHeaders, data = data)
+
+
+print add.url
+print add.status_code
+print add.content
